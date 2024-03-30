@@ -6,7 +6,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "any-drop",
+    "productName": "sample-app",
     "version": "0.0.0"
   },
   "tauri": {
@@ -19,7 +19,7 @@
     },
     "windows": [
       {
-        "title": "any-drop",
+        "title": "sample-app",
         "width": 800,
         "height": 600,
         "url": "src/main/index.html"
@@ -31,7 +31,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.any-drop.dev",
+      "identifier": "com.sample-app.dev",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
