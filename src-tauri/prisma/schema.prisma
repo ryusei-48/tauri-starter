@@ -1,0 +1,19 @@
+// prisma/schema.prisma の例
+datasource db {
+  provider = "sqlite"
+  url      = "file:../../../test.db"
+}
+
+generator client {
+    // Corresponds to the cargo alias created earlier
+    provider      = "cargo prisma"
+    // The location to generate the client. Is relative to the position of the schema
+    output        = "../src/prisma.rs"
+    //previewFeatures = ["fullTextSearch", "fullTextIndex"]
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  name  String
+  email String  @unique
+}
